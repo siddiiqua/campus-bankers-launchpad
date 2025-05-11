@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                campusBlue: {
+                    50: '#f0f7ff',
+                    100: '#e0eefe',
+                    200: '#bae0fd',
+                    300: '#7dc9fc',
+                    400: '#38acf8',
+                    500: '#0c90e9',
+                    600: '#0071c7',
+                    700: '#0059a2',
+                    800: '#064b85',
+                    900: '#0a406f',
+                    950: '#072a4a',
+                },
+                campusGreen: {
+                    50: '#edfdf4',
+                    100: '#d4f9e6',
+                    200: '#aef0cf',
+                    300: '#79e0b1',
+                    400: '#42c68c',
+                    500: '#25aa73',
+                    600: '#168a5c',
+                    700: '#136e4a',
+                    800: '#13583c',
+                    900: '#124a34',
+                    950: '#072920',
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,13 +111,29 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(10px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0)'
+                    }
+                },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.5s ease-out',
+			},
+            fontFamily: {
+                'display': ['Poppins', 'sans-serif'],
+                'body': ['Inter', 'sans-serif'],
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
