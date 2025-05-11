@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
           <img 
             src="/lovable-uploads/ab7b4d1c-3706-43cc-bdbd-18d5461fb1f0.png" 
             alt="Campus Bankers Logo" 
-            className="h-12 w-auto"
+            className="h-16 w-auto"
           />
         </div>
         <nav className="hidden md:flex items-center space-x-6">
