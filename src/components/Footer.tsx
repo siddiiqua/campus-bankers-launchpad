@@ -8,7 +8,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Campus Bankers</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/ab7b4d1c-3706-43cc-bdbd-18d5461fb1f0.png" 
+                alt="Campus Bankers Logo" 
+                className="h-12 w-auto bg-white rounded-lg p-1"
+              />
+            </div>
             <p className="text-gray-400">
               A program dedicated to provide real-world banking experience to college students.
             </p>

@@ -8,8 +8,11 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-10">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-campusBlue-600">Campus</span>
-          <span className="text-2xl font-bold text-campusGreen-600">Bankers</span>
+          <img 
+            src="/lovable-uploads/ab7b4d1c-3706-43cc-bdbd-18d5461fb1f0.png" 
+            alt="Campus Bankers Logo" 
+            className="h-12 w-auto"
+          />
         </div>
         <nav className="hidden md:flex items-center space-x-6">
           <Link to="#about" className="text-gray-700 hover:text-campusBlue-600 transition-colors">About</Link>
