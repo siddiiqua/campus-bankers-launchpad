@@ -21,15 +21,19 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 p-4">
             <div className="bg-white p-6 rounded-2xl shadow-xl">
-              <div className="aspect-video bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-24 h-24 text-campusBlue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 8a2 2 0 0 1 0 4 2 2 0 0 1 0-4zm0 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM6 15a2 2 0 0 1 0 4 2 2 0 0 1 0-4zm0 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm6 0a2 2 0 0 1 0 4 2 2 0 0 1 0-4zm0 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-7a2 2 0 0 1 0 4 2 2 0 0 1 0-4zm0 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-                </svg>
+              <div className="aspect-video bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
+                  alt="Students in an internship program" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="bg-campusGreen-50 p-3 rounded-lg mb-2">
                 <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 bg-campusGreen-500 rounded-full"></span>
-                  <p className="text-sm text-gray-700">Applications Open</p>
+                  <span className="px-2 py-1 bg-campusGreen-500 text-white text-xs rounded-md font-medium">
+                    Applications Open
+                  </span>
+                  <p className="text-sm text-gray-700">Apply before June 30th</p>
                 </div>
               </div>
               <div className="flex justify-between items-center">
